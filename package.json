@@ -1,6 +1,6 @@
 {
   "name": "jsonresume-theme-macchiato-ibic",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Simple theme for JSON Resume. Based on macchiato, which based on caffeine-theme.",
   "author": "Alessandro Biondi (Fork created by HOU Tianze)",
   "scripts": {

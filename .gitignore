@@ -468,3 +468,5 @@ MigrationBackup/
 # Ignore diff images generated after test failed comparation
 src/__tests__/__image_snapshots__/__diff_output__/
 
+.DS_Store
+.idea/

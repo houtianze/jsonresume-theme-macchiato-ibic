@@ -1,33 +1,72 @@
-{{#resume.basics}}
-<div class="container about-container">
+{{#if location}}
+{{#location}}
+{{> info-tag text=(formatAddress address city region postalCode countryCode) icon="fa-map-marker"}}
+{{/location}}
+{{/if}}
+
+{{#if birthday}}
+{{> info-tag text=(concat "Born in " this.birthday) icon="fa-calendar"}}
+{{/if}}
+
+{{#if email}}
+{{> info-tag text=this.email icon="fa-envelope-o" isEmail=true url=this.email}}
+{{/if}}
+
+{{#if phone}}
+{{> info-tag text=this.phone icon="fa-mobile"}}
+{{/if}}
+
+{{#if website}}
+{{> info-tag text=this.website icon="fa-globe" url=this.website}}
+{{/if}}
+
+{{#if profiles}}
+{{#each profiles}}
+{{> social}}
+{{/each}}
+{{/if}}
+{{!-- <div class="container about-container">
     {{> title value="About"}}
 
-    {{#if location}}
+    <p>
+        {{!-- {{#if location}}
         {{#location}}
-        {{> info-tag text=(formatAddress address city region postalCode countryCode) icon="fa-map-marker"}}
+        {{(formatAddress address city region postalCode countryCode)}} |
         {{/location}}
+        {{/if}} --}}
+
+        {{!-- {{#if email}}
+        <i class="fa fa-envelope-o"></i> {{this.email}} |
+        {{/if}}
+        {{#if phone}}
+        <i class="fa fa-mobile"></i> {{this.phone}} |
+        {{/if}}
+    </p> --}}
+    {{!-- {{#if location}}
+    {{#location}}
+    {{> info-tag text=(formatAddress address city region postalCode countryCode) icon="fa-map-marker"}}
+    {{/location}}
     {{/if}}
 
     {{#if birthday}}
-        {{> info-tag text=(concat "Born in " this.birthday) icon="fa-calendar"}}
+    {{> info-tag text=(concat "Born in " this.birthday) icon="fa-calendar"}}
     {{/if}}
 
     {{#if email}}
-        {{> info-tag text=this.email icon="fa-envelope-o" isEmail=true url=this.email}}
+    {{> info-tag text=this.email icon="fa-envelope-o" isEmail=true url=this.email}}
     {{/if}}
 
     {{#if phone}}
-        {{> info-tag text=this.phone icon="fa-mobile"}}
+    {{> info-tag text=this.phone icon="fa-mobile"}}
     {{/if}}
 
     {{#if website}}
-        {{> info-tag text=this.website icon="fa-globe" url=this.website}}
+    {{> info-tag text=this.website icon="fa-globe" url=this.website}}
     {{/if}}
 
     {{#if profiles}}
-        {{#each profiles}}
-            {{> social}}
-        {{/each}}
-    {{/if}}
-</section>
-{{/resume.basics}}
+    {{#each profiles}}
+    {{> social}}
+    {{/each}}
+    {{/if}} --}}
+    {{!-- </section> --}}

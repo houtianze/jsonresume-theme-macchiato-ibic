@@ -1,0 +1,11 @@
+{{#if resume.certificates.length}}
+<div class="container awards-container">
+    {{> title value="Certificates"}}
+
+    {{#each resume.certificates}}
+    <section class="item">
+        {{> section-header name=this.name startDate=this.date website=this.url}}
+    </section>
+    {{/each}}
+</div>
+{{/if}}

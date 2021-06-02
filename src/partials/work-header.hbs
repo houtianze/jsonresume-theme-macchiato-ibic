@@ -1,0 +1,16 @@
+<div class="section-header clearfix">
+    {{#if name}}
+    <h3 class="pull-left">
+        {{#if website}}
+        <a href="{{website}}" target="_blank">
+            {{name}}
+            {{#if showWebsite }}
+            <span class="sublink">∙ <a href="{{website}}" target="_blank" class="sublink">{{website}}</a></span>
+            {{/if}}
+        </a>
+        {{else}}
+        {{name}}
+        {{/if}}
+    </h3>
+    {{/if}}
+</div>

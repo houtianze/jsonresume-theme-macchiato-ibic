@@ -1,40 +1,54 @@
 {{#if resume.work.length}}
-  <div class="container work-container">
-    {{> title value="Experience"}}
+<div class="container work-container">
+  {{> title value="Experience"}}
 
-    {{#each resume.work}}
-      <section class="item">
-        {{#if name}}
-          {{> section-header name=this.name}}
-        {{/if}}
-        {{#if company}}
-          {{> section-header name=this.company }}
-        {{/if}}
+  {{#each resume.work}}
+  <section class="item">
+    {{#if name}}
+    {{> work-header name=this.name}}
+    {{/if}}
+    {{#if company}}
+    {{> work-header name=this.company }}
+    {{/if}}
 
-        {{#if position}}
-          <h4>{{position}}</h4>
+    {{#if position}}
+    <div class="clearfix">
+      <h4 class="pull-left">{{position}}</h4>
+      <h5 class="italic pull-right">
+        {{#if startDate}}
+        <span class="startDate">{{formatDate startDate}}</span>
+        {{#if endDate}}
+        <span class="endDate"> - {{formatDate endDate}}</span>
+        {{else}}
+        <span class="endDate"> - Present</span>
         {{/if}}
+        {{else if releaseDate}}
+        {{formatDate releaseDate}}
+        {{/if}}
+      </h5>
+    </div>
+    {{/if}}
 
-        {{#if keywords.length}}
-          <div class="flex-container">
-            {{#each keywords}}
-              <h6 class="skill">{{.}}</h6>
-            {{/each}}
-          </div>
-        {{/if}}
+    {{#if keywords.length}}
+    <div class="flex-container">
+      {{#each keywords}}
+      <h6 class="skill">{{.}}</h6>
+      {{/each}}
+    </div>
+    {{/if}}
 
-        {{#if summary}}
-          <p class="summary">{{summary}}</p>
-        {{/if}}
+    {{#if summary}}
+    <p class="summary">{{summary}}</p>
+    {{/if}}
 
-        {{#if highlights.length}}
-          <ul>
-            {{#each highlights}}
-              <li>{{.}}</li>
-            {{/each}}
-          </ul>
-        {{/if}}
-      </section>
-    {{/each}}
-  </div>
+    {{#if highlights.length}}
+    <ul>
+      {{#each highlights}}
+      <li>{{.}}</li>
+      {{/each}}
+    </ul>
+    {{/if}}
+  </section>
+  {{/each}}
+</div>
 {{/if}}

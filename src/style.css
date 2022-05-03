@@ -67,7 +67,7 @@ body {
   font-family: "Lato", Helvetica, Arial, sans-serif;
   font-weight: 400;
   background: white;
-  margin: 50px 0 100px;
+  /*margin: 50px 0 100px;*/
   letter-spacing: .3px;
   color: #39424B;
 }
@@ -251,13 +251,13 @@ ul.two-column li {
 /* Layouts */
 .page {
   background: white;
-  width: 612px;
-  min-height: 792px;
+  /*width: 612px;*/
+  /*min-height: 792px;*/
   display: block;
   margin: 0 auto;
-  border-top: 10px solid #56817A;
-  padding: 36px 22px 30px 34px;
-  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);
+  /*border-top: 10px solid #56817A;*/
+  /*padding: 36px 22px 30px 34px;*/
+  /*box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);*/
 }
 
 .page:after {
@@ -268,7 +268,7 @@ ul.two-column li {
 
 .left-column {
   float: left;
-  width: 160px;
+  width: 190px;
   margin-right: 20px;
   word-wrap: break-word;
 }
@@ -357,7 +357,7 @@ ul.two-column li {
   text-transform: none;
   display: inline-block;
   vertical-align: middle;
-  width: 139px;
+  /*width: 139px;*/
 }
 
 .references-container .fa {

@@ -1,73 +1,60 @@
-# Macchiato Theme! ☕️+🥛
+# Awesome Theme! 
 
-(This is a forked and slightly modified version of) Macchiato it's a [JSON Resume](https://jsonresume.org/) theme based on [Theme Boilerplate](https://github.com/jsonresume/jsonresume-theme-boilerplate) and [Caffeine Theme](https://github.com/kelyvin/jsonresume-theme-caffeine).
+This is a fork of the (jsonresume-theme-macchiato)[https://github.com/biosan/jsonresume-theme-macchiato/tree/master].
 
 ## Why?
 
-I wanted to build my own resume theme, so I decided to start from a theme I like a lot and trying to make it a bit more personal.
-
-I also wanted I simple environment, so I used the boilerplate provided by JSON Resume instead of using the awesome work done by [kelyvin](https://github.com/kelyvin/) for it's Caffeine Theme. If you are looking for a more complete environment take a look at the caffine theme.
-
-
-> ***Currently it doesn't have any major style difference from it's parent [Caffeine](https://github.com/kelyvin/jsonresume-theme-caffeine).***
-
-
-## Changes from Caffeine Theme
-
-### Environment
-
-- Simpler and less sofisticated development environment, the same as JSON Resume boilerplate. (Caffeine has live re-building and automatic page reloading)
-
-
-### Visual differences
-
-- Add tags to projects and skills
-- Switch from `UPPERCASE` to `Capitalize` on most text
-
-## Changes from Macchiato Theme
-
-Mainly on `projects`:
-
-- Use `name` instead of `title` as per `jsonresume` schema
-- Add `description` sections for each project
+I liked the macchiato theme style but I didn't like the side bar and the green accent.
 
 ## Usage
 
-1. Download [JSON Resume CLI](https://jsonresume.org/)
+### Installation
+
+1. Install node/npm
+
+```shell
+brew install nvm
+nvm install v14.19.2 # this is the one I used at time of writing
+nvm use v14.19.2 
+```
+
+2. Download [JSON Resume CLI](https://jsonresume.org/)
   ```
   npm install -g resume-cli
   ```
 
-2. Download the theme from [npm](https://www.npmjs.com/)
+1. To install all the dependencies
   ```
-  npm install -g jsonresume-theme-macchiato
-  ```
-
-3. Use resume cli to build your resume
-  ```
-  resume export resume.html --theme macchiato
+  npm install
   ```
 
-### PDF output
+### Serve the resume
 
-Probably you want a PDF version of your resume...
-
-JSONResume CLI should be able to make a PDF out of your JSON but I always struggled to get it to work,
-so I switched to a more direct and effective approach.
-
-I use Puppeteer-CLI to make a PDF from my HTML resume.
-
+To serve your `resume.json` locally, you can do 
+```shell
+resume serve --theme .
 ```
+
+### Export the resume
+
+1. You have to export your resume to `html` first 
+
+```shell
+resume export resume.html --theme .
+```
+
+2. Install Puppeteer-CLI
+
+```shell
 npm install -g puppeteer-cli
+```
+
+3. Export to pdf
+
+```shell
 puppeteer --margin-top 0 --margin-right 0 --margin-bottom 0 --margin-left 0 --format A4 print resume.html resume.pdf
 ```
-
-Obviously you could write a very simple Node script to use the real Puppeteer and the `render` function to make a PDF without first exporting the HTML version.
-
-Also checkout [HackMyResume](), a powerful tool to build and analyze your JSON Resume.
-
 
 ## License
 
 Available under the [MIT license](http://mths.be/mit).
-

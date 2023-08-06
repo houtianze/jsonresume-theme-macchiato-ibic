@@ -2,7 +2,7 @@
   "basics": {
     "picture": "https://i.imgur.com/BzN9snw.jpg",
     "name": "Damien Matias",
-    "label": "Lead Machine Learning Engineer at Euler Hermes",
+    "label": "Senior MLOps Engineer at Onfido",
     "email": "damien.matias14@gmail.com",
     "phone": "+33647968883",
     "website": "",
@@ -21,12 +21,28 @@
   },
   "work": [
     {
-      "company": "Euler Hermes",
+      "company": "Onfido",
       "endDate": "",
       "highlights": [
-        "Tech Lead of the implementation of a new Data Science \"End to End\" platform. (Studio, Model Serving/Inference, Feature Store, Automatic training, Reproducibility, etc)",
-        "Supervision of more junior colleagues and upskill them",
-        "Industrialization of new ML models (Batch or Online)"
+        "Contributed to designing and implementing a secure remote development platform with enhanced data access.",
+        "Collaborated on establishing a secure data access mechanism, including data deletion policy to ensure compliance.",
+        "Lead the implementation of an ML/DL model inference platform based on Nvidia Triton, enhancing model performance and cost efficiency.",
+        "Set up Kubernetes clusters (EKS) to ensure robust and seamless operations for all services and compute.",
+        "Implemented resource and cost monitoring for K8S clusters using Prometheus, Grafana, Promtail, Loki, and Kubecost."
+      ],
+      "position": "Senior MLOps Engineer",
+      "startDate": "2021-12-01",
+      "summary": "In a team responsible for maintaining and advancing infrastructure dedicated to research and machine/deep learning.",
+      "website": "https://www.linkedin.com/company/onfido/",
+      "keywords": ["Python", "Kubernetes", "AWS", "Terraform", "Docker", "Machine Learning", "Prometheus", "Grafana"]
+    },
+    {
+      "company": "Euler Hermes",
+      "endDate": "2021-12-01",
+      "highlights": [
+        "Tech Lead of the implementation of a new Data Science \"End to End\" platform. (Studio, Model Serving/Inference, Feature Store, Automatic training, Reproducibility, etc).",
+        "Supervision of more junior colleagues and upskill them.",
+        "Industrialization of new ML models (Batch or Online)."
       ],
       "position": "Lead Machine Learning Engineer",
       "startDate": "2021-04-30",
@@ -38,32 +54,17 @@
       "company": " ",
       "endDate": "2021-04-30",
       "highlights": [
-        "Rework of the Data Scientists Studio ",
-        "Refactoring of ML models (Python 2 -> Python 3, unit tests, integration tests, generated doc, CI/CD)",
-        "Rework of our production plateform (Usage of Docker, AWS Lambda, SQS)",
-        "Rework of our Data Lake",
-        "Implementation of a model simulation system"
+        "Rework of the Data Scientists Studio.",
+        "Refactoring of ML models (Python 2 -> Python 3, unit tests, integration tests, generated doc, CI/CD).",
+        "Rework of our production platform (Usage of Docker, AWS Lambda, SQS).",
+        "Rework of our Data Lake.",
+        "Implementation of a model simulation syste."
       ],
       "position": "Machine Learning Engineer",
       "startDate": "2018-10-31",
       "summary": "",
       "website": "https://www.linkedin.com/company/euler-hermes/",
       "keywords": []
-    },
-    {
-      "company": "HSBC",
-      "endDate": "2018-08-31",
-      "highlights": [
-        "POC of a credit card fraud detection model",
-        "Deployment on AWS using AWS Lambda, Sagemaker, API Gateway",
-        "Development of an internal Chatbot framework based on Rasa",
-        "Implement of an UI for the Chatbot"
-      ],
-      "position": "Machine Learning Engineer",
-      "startDate": "2018-02-28",
-      "summary": "",
-      "website": "https://www.linkedin.com/company/hsbc/",
-      "keywords": ["Python", "Tensorflow", "Keras", "Pandas", "Scikit-Learn", "AWS", "Flask", "NLP"]
     }
   ],
   "volunteer": [],
@@ -89,9 +90,14 @@
   "publications": [],
   "skills": [
     {
+      "name": "Languages",
+      "level": "",
+      "keywords": ["French (Native Speaker)", "English (925 Toeic)"]
+    },
+    {
       "name": "Python",
       "level": "",
-      "keywords": ["Pandas", "Numpy", "Scikit-Learn", "Flask"]
+      "keywords": ["FastAPI", "Pandas", "Numpy", "Flask", "Dask", "boto3"]
     },
     {
       "name": "Amazon Web Services",
@@ -114,7 +120,12 @@
     {
       "name": "DevOps",
       "level": "",
-      "keywords": ["Docker", "Terraform", "Packer", "Kubernetes", "Gitlab CI", "Prometheus", "Grafana"]
+      "keywords": ["Git", "Docker", "Terraform", "Packer", "Kubernetes", "Gitlab CI", "Prometheus", "Grafana", "Loki", "KubeCost"]
+    },
+    {
+      "name": "Machine Learning",
+      "level": "",
+      "keywords": ["PyTorch", "transformers", "Scikit-Learn", "XGBoost", "Nvidia Triton Server"]
     },
     {
       "name": "Data Engineering",
@@ -134,15 +145,10 @@
   ],
   "interests": [],
   "references": [],
-  "certificates": [
-    {
-      "name": "AWS Certified Developer - Associate",
-      "date": "2019-08-27",
-      "url": "https://www.certmetrics.com/amazon/public/transcript.aspx?transcript=3TSHRSQ1BBB1QFKX"
-    }
-  ],
+  "certificates": [],
   "meta": {
     "canonical": "https://raw.githubusercontent.com/jsonresume/resume-schema/master/resume.json",
+    "theme": "jsonresume-theme-latte",
     "version": "v1.0.0",
     "lastModified": "2017-12-24T15:53:00"
   }
